@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Index</title>
+    <link rel="stylesheet" href="Styles/jquery-ui.min.css">
+    <script src="Scripts/jquery-ui.min.js"></script>
+    <script src="Scripts/jquery-3.5.1.min.js"></script>
+    <style>
+        #box {
+            height: 150px;
+            width: 450px;
+            background: #333;
+            color: #fff;
+            position: relative;
+            text-align: center;
+        }
+        #box2 {
+            height: 100px;
+            width: 100px;
+            background: crimson;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h3>This is a jQuery box</h3>
+    </div>
+    <br>
+    <div id="box2"></div>
+    <button type="button" id="btnFadeOut">Fade Out</button>
+    <button type="button" id="btnFadeIn">Fade In</button>
+    <button type="button" id="btnFadeTog">Fade Toggle</button>
+    <button type="button" id="btnSlideIn">Slide In</button>
+    <button type="button" id="btnSlideOut">Slide Out</button>
+    <button type="button" id="btnSlideTog">Slide Toggle</button>
+    <button type="button" id="stop">Stop</button>
+    <hr>
+    <button type="button" id="btnAnimate">Animate</button>
+    <button type="button" id="moveAround">Move</button>
+    <script>
+        $(document).ready(function(){
+            $('#btnFadeOut').click(function(){
+                $('#box').fadeOut(3000);
+            });
+            $('#btnFadeIn').click(function(){
+                $('#box').fadeIn(3000);
+            });
+            $('#btnFadeTog').click(function(){
+                $('#box').fadeToggle(3000);
+            });
+            $('#btnSlideIn').click(function(){
+                $('#box').slideDown();
+            });
+            $('#btnSlideOut').click(function(){
+                $('#box').slideUp(3000);
+            });
+            $('#btnSlideTog').click(function(){
+                $('#box').slideToggle(2000);
+            });
+            $('#stop').click(function(){
+                $('#box').stop();
+            });
+            $('#btnAnimate').click(function(){
+                $('#box2').animate({
+                    left: '400',
+                    height: '300px',
+                    width: '300px'
+                });
+            });
+            $('#moveAround').click(function(){
+                var box = $('#box2');
+                box.animate({
+                    left: 300,
+                });
+                box.animate({
+                    top: 300,
+                });
+                box.animate({
+                    left: 0,
+                });
+                box.animate({
+                    top: 0,
+                });
+            });
+        });
+    </script>
+</body>
+</html>
