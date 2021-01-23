@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datepicker</title>
+    <!-- JqueryUI style sheet -->
+    <link rel="stylesheet" href="assets/styles/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/styles/jquery-ui.css">
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <div>
+        <input type="text" id="datepicker" placeholder="Please select a data">
+    </div>
+    <!-- Jquery JS -->
+    <script src="assets/scripts/jquery-3.5.1.min.js"></script>
+    <!-- JqueryUI JS -->
+    <script src="assets/scripts/jquery-ui.min.js"></script>
+    <!-- JQUERY INIT -->
+    <script>
+        $(document).ready(function(){
+            $('#datepicker').datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+    </script>
+</body>
+</html>

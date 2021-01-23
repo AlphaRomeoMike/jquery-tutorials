@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>jQuery Introduction</title>
+</head>
+<body>
+    <div id="demo"></div> <br>
+    <input type="button" value="Button to play Fade toggle" id="btnFadeToggle">
+    <input type="button" value="Button to play Fade In" id="btnFadeIn">
+    <input type="button" value="Button to play Animation" id="btnAnimate">
+    <br><div id="main"></div>
+    <script src="assets/scripts/jquery-3.5.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#btnFadeToggle').click(function() {
+                $('#demo').fadeToggle(2000); //3000 milli seconds = 3 seconds
+            });
+
+            $('#btnFadeIn').click(function(){
+                $('#demo').fadeIn(); //Time to play animation can be given in milliseconds
+            });
+
+            $('#btnAnimate').click(function(){
+                var main = $('#main');
+                main.animate({
+                    left: 300
+                })
+                main.animate({
+                    top: 300
+                })
+                main.animate({
+                    left: 0
+                })
+                main.animate({
+                    top: 0
+                })
+            })
+        });
+    </script>
+</body>
+</html>
