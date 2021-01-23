@@ -14,6 +14,10 @@
     <div>
         <input type="text" id="datepicker" placeholder="Please select a data">
     </div>
+
+    <div id="dialog" title="A dialog in jQuery">
+        <p>Hello world, this is a jQuery dialog</p>
+    </div>
     <!-- Jquery JS -->
     <script src="assets/scripts/jquery-3.5.1.min.js"></script>
     <!-- JqueryUI JS -->
@@ -25,6 +29,7 @@
                 changeMonth: true,
                 changeYear: true
             })
+            $('#dialog').dialog();
         });
     </script>
 </body>
