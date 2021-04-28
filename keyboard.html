@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h3>jQuery: Keyboard Events</h3>
+    <div id="box" class="test">
+        <h4>Text box</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, reprehenderit.</p>
+    </div>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script>
+        var body = $('body');
+        $(document).ready(function(){
+            body.keypress(function(){
+                $(this).css('background-color', 'orange')
+            })
+
+            body.keyup(function(){
+                $(this).css('background-color', 'yellow')
+            })
+            
+            body.keydown(function(){
+                $(this).css('background-color', 'lightpurple')
+            })
+            
+        })
+    </script>
+</body>
+</html>

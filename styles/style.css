@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#box {
+    margin: 10px;
+    background: pink;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+p {
+    line-height: 80px;
+}
+
+form {
+    margin: 10px;
+}
+
+#data {
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background: lightgrey;
+    border: 1px solid;
+}

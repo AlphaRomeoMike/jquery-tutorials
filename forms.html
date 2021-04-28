@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h3>jQuery: Forms Events</h3>
+    <br><br><br><br>
+    <form action="" id="form">
+        <label for="name">Name</label><br>
+        <input type="text" placeholder="Enter your name" id="name">
+        <small>Eg. Ali</small>
+        <br><br>
+        <label for="email">Email</label><br>
+        <input type="email" placeholder="Enter your email" id="email">
+        <small>Eg. ali@gmail.com</small>
+        <br><br>
+        <label for="date">Date</label><br>
+        <input type="date" placeholder="Enter your DOB" id="date">
+        <small>Eg. 12/7/2002</small>
+        <br><br>
+        <label for="country">Country</label>
+        <select name="" id="country">
+            <optgroup label="Muslim">
+                <option value="Pakistan">Pakistan</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Dubai">Dubai</option>
+            </optgroup>
+
+            <optgroup label="Non-Muslim">
+                <option value="Canada">Canada</option>
+                <option value="USA">USA</option>
+                <option value="Israel">Israel</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <input type="submit" id="submit">   
+    </form>
+
+    <div id="data"></div>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/events.js"></script>
+    <script>
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h3>jQuery: Mouse Events</h3>
+    <div id="box" class="test">
+        <h4>Text box</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, reprehenderit.</p>
+    </div>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script>
+        var box = $('#box');
+        $(document).ready(function(){
+            // Simple execution on click
+            box.click(function(){
+                box.css('background-color', 'orange');
+            });
+            // Simple execution on double click
+            box.dblclick(function(){
+                box.css('background-color', 'yellow');
+            });
+            // Simple execution on right click
+            box.contextmenu(function(){
+                box.css('background-color', 'lightgreen');
+            });
+            // Simple execution on mouse entering the box
+            box.mouseenter(function(){
+                box.css('background-color', 'brown');
+            });
+            // Simple execution on mouse leaving the box
+            box.mouseleave(function(){
+                box.css('background-color', 'lightblue');
+            });
+            // Simple execution on mouse moving inside the box
+            box.mousemove(function(){
+                box.css('background-color', 'grey');
+            });
+            
+        });
+    </script>
+</body>
+</html>
